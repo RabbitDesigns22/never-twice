@@ -6,6 +6,18 @@
 
 `never-twice` keeps one shared error log. Every session reads the lines for its topic before starting, and every new mistake is written down with the rule that prevents it.
 
+## See the difference
+
+> **You:** You scheduled the post on the wrong date again.
+
+**Without the skill:** the agent apologizes, fixes it, and next week another session makes the same mistake.
+
+**With the skill:** the mistake goes into a shared error log under its topic, with the rule that prevents it. Every session reads that topic before the same kind of task.
+
+**Skip it if** you run one short session and never come back to the project.
+
+**Status:** in daily use in the author's own setup. Plain instructions, no scripts, no network calls. MIT. Issues and suggestions welcome.
+
 ## What it does
 
 | Problem | How never-twice stops it |
@@ -52,6 +64,30 @@ Before every task and every answer that recommends, states a status or says "don
 **Una skill para que el mismo error nunca pase dos veces.** Los agentes repiten errores porque cada sesión empieza de cero. `never-twice` guarda un registro de errores compartido (`ERRORS.md`). Antes de empezar, cada sesión lee los errores de su tema. Antes de afirmar algo, lo comprueba. Piensa el plan completo y da una sola respuesta. No dice "listo" sin la prueba real. Y cada error nuevo se anota con la regla que lo evita.
 
 Instalar: `npx skills add RabbitDesigns22/never-twice`
+
+## More skills from the same setup
+
+These come from one real workflow: a small agency run with 15+ Claude Code sessions in parallel. Each skill fixes one problem that kept happening there.
+
+| Skill | What it fixes |
+|---|---|
+| [one-pass](https://github.com/RabbitDesigns22/one-pass) | get it right the first time; stop paying tokens for rework |
+| [hora-exacta](https://github.com/RabbitDesigns22/hora-exacta) | real date and time in every message, so nothing lands on the wrong day |
+| [hands-on](https://github.com/RabbitDesigns22/hands-on) | the agent does what it can and only asks you for codes, keys and payments |
+| [easy-for-them](https://github.com/RabbitDesigns22/easy-for-them) | steps people actually follow: direct link, one action per line |
+| [one-answer](https://github.com/RabbitDesigns22/one-answer) | one thought-through answer instead of plan, fix, new plan |
+| [report-now](https://github.com/RabbitDesigns22/report-now) | status checked live this minute, stamped with the time |
+| [sort-me-out](https://github.com/RabbitDesigns22/sort-me-out) | one ordered list of what is urgent, waiting and forgotten |
+| [in-the-loop](https://github.com/RabbitDesigns22/in-the-loop) | a live board so parallel sessions know what the others changed |
+| [study-first](https://github.com/RabbitDesigns22/study-first) | reads everything in full and answers point by point, no invented details |
+| [session-watchdog](https://github.com/RabbitDesigns22/session-watchdog) | wakes the sessions that got stuck mid-task, leaves the rest alone |
+| [skill-harvest](https://github.com/RabbitDesigns22/skill-harvest) | reads your sessions and finds the skills you are missing |
+| [small-budget-ads](https://github.com/RabbitDesigns22/small-budget-ads) | Meta Ads rules for 1-5 USD a day ad sets |
+| [whatsapp-closer](https://github.com/RabbitDesigns22/whatsapp-closer) | evidence-ranked rules for a WhatsApp sales assistant that closes |
+| [whatsapp-number-onboarding](https://github.com/RabbitDesigns22/whatsapp-number-onboarding) | connect a number to the WhatsApp Cloud API in the safe order |
+| [proposal-pdf](https://github.com/RabbitDesigns22/proposal-pdf) | short PDF proposals with every price checked against its source |
+
+If one of them saved you a redo, a star helps other people find it.
 
 ## License
 
