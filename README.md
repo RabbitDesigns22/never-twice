@@ -33,7 +33,7 @@
 With the [skills CLI](https://skills.sh):
 
 ```bash
-npx skills add RabbitDesigns22/never-twice
+npx skills@1.8.1 add https://github.com/RabbitDesigns22/never-twice/tree/9be7fdc7fce0aa906d7da32edc1a964ca7369c59
 ```
 
 Or manually: copy `skills/never-twice/` into `~/.claude/skills/` for all your projects, or into `.claude/skills/` for one project.
@@ -63,7 +63,7 @@ Before every task and every answer that recommends, states a status or says "don
 
 **Una skill para que el mismo error nunca pase dos veces.** Los agentes repiten errores porque cada sesión empieza de cero. `never-twice` guarda un registro de errores compartido (`ERRORS.md`). Antes de empezar, cada sesión lee los errores de su tema. Antes de afirmar algo, lo comprueba. Piensa el plan completo y da una sola respuesta. No dice "listo" sin la prueba real. Y cada error nuevo se anota con la regla que lo evita.
 
-Instalar: `npx skills add RabbitDesigns22/never-twice`
+Instalar: `npx skills@1.8.1 add https://github.com/RabbitDesigns22/never-twice/tree/9be7fdc7fce0aa906d7da32edc1a964ca7369c59`
 
 ## More skills from the same setup
 
